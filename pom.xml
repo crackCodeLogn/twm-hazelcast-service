@@ -17,8 +17,6 @@
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id> <!-- NOT DEFAULT -->
         <quarkus.platform.version>2.1.2.Final</quarkus.platform.version>
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-        <feign-okhttp.version>11.6</feign-okhttp.version>
-        <feign-gson.version>11.6</feign-gson.version>
         <hazelcast.version>4.2.2</hazelcast.version>
         <lombok.version>1.18.20</lombok.version>
     </properties>
@@ -50,21 +48,6 @@
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>quarkus-hazelcast-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-core</artifactId>
-            <version>${feign-gson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-okhttp</artifactId>
-            <version>${feign-okhttp.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-gson</artifactId>
-            <version>${feign-gson.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
