@@ -1,7 +1,5 @@
 package com.vv.personal;
 
-import com.vv.personal.hazelcast.equities.config.EquitiesHazelCastConfig;
-import io.quarkus.test.Mock;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.hazelcast.HazelcastServerTestResource;
 import io.quarkus.test.junit.QuarkusTest;
@@ -13,9 +11,6 @@ import static org.hamcrest.CoreMatchers.is;
 @QuarkusTest
 @QuarkusTestResource(HazelcastServerTestResource.class)
 public class EquitiesStkPriceCacheControllerTest {
-
-    @Mock
-    EquitiesHazelCastConfig equitiesHazelCastConfig;
 
     @Test
     public void testHelloEndpoint() {
